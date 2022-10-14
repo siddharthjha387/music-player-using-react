@@ -5,8 +5,10 @@ import SongsList from "./components/SongsList";
 import songs from './songs';
 function App() {
 const [currSong,setCurrSong]=useState(0);
+const [pause,setPause]=useState(1);
 
-const handleprevClick= async ()=>{
+
+const handleprevClick=()=>{
   setCurrSong(((currSong-1+(songs.length))%(songs.length)));
 }
 
@@ -28,8 +30,8 @@ const animation=(ch)=> {
   return (
     <div className="App">
       <h1 id="title">Music Player</h1>
-      <Player song={songs[currSong]} handleprevClick={handleprevClick} handlenextClick={handlenextClick}/>
-      <SongsList songs={songs} setSong={setSong}/>
+      <Player song={songs[currSong]} handleprevClick={handleprevClick} handlenextClick={handlenextClick} currSong={currSong} pause={pause} setPause={setPause}/>
+      <SongsList songs={songs} setSong={setSong} pause={pause} setPause={setPause}/>
     </div>
   );
 }

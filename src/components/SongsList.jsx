@@ -1,9 +1,15 @@
 import React from 'react'
 import './SongsList.css'
 export default function SongsList(props) {
+
+ 
+    
     const handleClick=(event)=>{
-        console.log(event.target.id);
+        
         props.setSong((event.target.id));
+        props.setPause(0);
+        document.querySelector("audio").play();
+        document.getElementById("play").classList.replace("fa-play", "fa-pause");
     }
   return (
     <div className="set">
