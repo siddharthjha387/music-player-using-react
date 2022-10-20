@@ -8,15 +8,15 @@
   }
 
   .music_player{
-    height: 27rem;
-    width: 18rem;
+    border: 10px solid #404b69;
     border-radius: 15px;
     box-shadow: 0 1.2rem 3rem 0.5rem #485474;
+    color: #dbedf3;
+    height: 22rem;
     padding: 3rem;
-    color: #DBEDF3;
-  
+    padding-top: 1em;
     text-align: center;
-    border: 10px solid #404B69;
+    width: 18rem;
   }
 
   .img_container{
