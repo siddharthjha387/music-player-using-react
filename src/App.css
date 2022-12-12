@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body {
     text-align: center;
     background-color: #283149;
@@ -8,6 +13,7 @@ body {
     color: #DBEDF3;
     font-family: "Arvo", cursive;
     text-shadow: 3px 0 #da0404;
+    margin-top: 10px;
   
   }
   h2,h3{
